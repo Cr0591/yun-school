@@ -1,0 +1,14 @@
+#数据源
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/yun-school?characterEncoding=UTF-8&useUnicode=true&useSSL=false
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath*:com/ljuuu/yun/**/xml/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
